@@ -13,7 +13,7 @@ struct ContactoPrevista: View {
         {
             Image(systemName: "face.smiling")
             Text("Holi")
-            Text("Juan")
+            Text("Boli:3")
         }
     }
 }
