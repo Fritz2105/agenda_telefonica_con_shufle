@@ -11,6 +11,7 @@
 		FB9146512D6F7981004D7167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9146502D6F7981004D7167 /* Assets.xcassets */; };
 		FB9146542D6F7981004D7167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9146532D6F7981004D7167 /* Preview Assets.xcassets */; };
 		FB91465B2D6F7C0B004D7167 /* PantallaAgenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91465A2D6F7C0B004D7167 /* PantallaAgenda.swift */; };
+		FB91465E2D6F7FC2004D7167 /* contacto_prevista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91465D2D6F7FC2004D7167 /* contacto_prevista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FB9146502D6F7981004D7167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9146532D6F7981004D7167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB91465A2D6F7C0B004D7167 /* PantallaAgenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaAgenda.swift; sourceTree = "<group>"; };
+		FB91465D2D6F7FC2004D7167 /* contacto_prevista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contacto_prevista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		FB91464B2D6F7980004D7167 /* Agenda Shufle */ = {
 			isa = PBXGroup;
 			children = (
+				FB91465C2D6F7F58004D7167 /* componentes */,
 				FB91464C2D6F7980004D7167 /* Agenda_ShufleApp.swift */,
 				FB9146502D6F7981004D7167 /* Assets.xcassets */,
 				FB9146522D6F7981004D7167 /* Preview Content */,
@@ -65,6 +68,14 @@
 				FB9146532D6F7981004D7167 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB91465C2D6F7F58004D7167 /* componentes */ = {
+			isa = PBXGroup;
+			children = (
+				FB91465D2D6F7FC2004D7167 /* contacto_prevista.swift */,
+			);
+			path = componentes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB91465B2D6F7C0B004D7167 /* PantallaAgenda.swift in Sources */,
+				FB91465E2D6F7FC2004D7167 /* contacto_prevista.swift in Sources */,
 				FB91464D2D6F7980004D7167 /* Agenda_ShufleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

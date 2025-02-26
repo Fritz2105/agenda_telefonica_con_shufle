@@ -9,7 +9,15 @@ import SwiftUI
 
 struct PantallaAgenda: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        List{
+            VStack {
+                ForEach(0...45, id: \.self){ _ in //nos imprime la vista ese numero de veces
+                    ContactoPrevista()
+                }
+            }
+            .background(Color.yellow)
+        }
     }
 }
 
