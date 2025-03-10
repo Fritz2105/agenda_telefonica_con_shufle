@@ -15,18 +15,18 @@ struct ContactoPrevista: View {
     var al_pulsar: () -> Void = { print("No se ha implementado") }
     
     let esquinas_redondeadas = CGSize(width: 25, height: 25)
-    
+    let esquinas_redondeadas_circulo = CGSize(width: 55, height: 25)
     var body: some View {
         HStack(alignment: VerticalAlignment.center){
             Spacer()
             
             VStack {
-                Image("imagen")
+                Image(contacto_a_mostar.imagen)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 75, alignment: .center)
-                    .clipShape(RoundedRectangle(cornerSize: esquinas_redondeadas))
-                    .background(Color.blue)
+                    .clipShape(RoundedRectangle(cornerSize: esquinas_redondeadas_circulo))
+                    .background(Color.init(red:0, green:200, blue:192))
                     
             }.background(Color.white)
             
@@ -37,14 +37,14 @@ struct ContactoPrevista: View {
                 Text(contacto_a_mostar.nombre)
                 Text(contacto_a_mostar.telefono)
             }
-                .background(Color.gray)
+                //.background(Color.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             
             Spacer()
         }
         .frame(width: 250)
-        .background(Color.red)
+        .background(Color.init(red:0, green:200, blue:192))
         .clipShape(RoundedRectangle(cornerSize: esquinas_redondeadas))
         .onTapGesture {
             al_pulsar()

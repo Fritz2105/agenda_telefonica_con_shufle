@@ -11,7 +11,8 @@ struct ContactoAgenda: Identifiable {
     
     var nombre: String
     var telefono: String
-    
+    //aqui lo de la imagen
+    var imagen: String = "imagen"
     var id: String { nombre }
   
 }

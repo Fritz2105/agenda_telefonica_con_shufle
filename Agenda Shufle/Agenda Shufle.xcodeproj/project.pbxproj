@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB64D9142D7618D2004B4D9C /* pantalla_agregar_contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64D9132D7618D2004B4D9C /* pantalla_agregar_contacto.swift */; };
 		FB64D9162D761C43004B4D9C /* icono.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64D9152D761C43004B4D9C /* icono.swift */; };
+		FB6B042D2D78BCE300844157 /* patanlla_del_ganador.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B042C2D78BCE300844157 /* patanlla_del_ganador.swift */; };
 		FB91464D2D6F7980004D7167 /* Agenda_ShufleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91464C2D6F7980004D7167 /* Agenda_ShufleApp.swift */; };
 		FB9146512D6F7981004D7167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9146502D6F7981004D7167 /* Assets.xcassets */; };
 		FB9146542D6F7981004D7167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9146532D6F7981004D7167 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		FB64D9132D7618D2004B4D9C /* pantalla_agregar_contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_agregar_contacto.swift; sourceTree = "<group>"; };
 		FB64D9152D761C43004B4D9C /* icono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icono.swift; sourceTree = "<group>"; };
+		FB6B042C2D78BCE300844157 /* patanlla_del_ganador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patanlla_del_ganador.swift; sourceTree = "<group>"; };
 		FB9146492D6F7980004D7167 /* Agenda Shufle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda Shufle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91464C2D6F7980004D7167 /* Agenda_ShufleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda_ShufleApp.swift; sourceTree = "<group>"; };
 		FB9146502D6F7981004D7167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				FB64D9132D7618D2004B4D9C /* pantalla_agregar_contacto.swift */,
+				FB6B042C2D78BCE300844157 /* patanlla_del_ganador.swift */,
 			);
 			path = pantallas;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6B042D2D78BCE300844157 /* patanlla_del_ganador.swift in Sources */,
 				FB64D9162D761C43004B4D9C /* icono.swift in Sources */,
 				FB91465B2D6F7C0B004D7167 /* PantallaAgenda.swift in Sources */,
 				FB91465E2D6F7FC2004D7167 /* contacto_prevista.swift in Sources */,
