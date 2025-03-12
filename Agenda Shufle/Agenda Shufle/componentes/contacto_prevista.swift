@@ -46,9 +46,10 @@ struct ContactoPrevista: View {
         .frame(width: 250)
         .background(Color.init(red:0, green:200, blue:192))
         .clipShape(RoundedRectangle(cornerSize: esquinas_redondeadas))
-        .onTapGesture {
-            al_pulsar()
-        }
+        .shadow(color: Color.gray, radius: 8, x: 0, y: 10)
+        //.onTapGesture {
+          //  al_pulsar()
+      //  }
         
         Spacer()
 

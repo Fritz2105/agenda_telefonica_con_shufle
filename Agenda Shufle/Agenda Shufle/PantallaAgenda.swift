@@ -38,31 +38,49 @@ struct PantallaAgenda: View {
     
     
     var body: some View {
+        NavigationStack{
         
-        ScrollView {
-            VStack(spacing: 10) {
-                ForEach(contactos_actuales){ contacto in
-                    //Text("\(contacto.nombre)")
-                    ContactoPrevista(contacto_a_mostar: contacto, al_pulsar: {print("Te envia saludos \(contacto.nombre) desde la pantalla de agenda")})
+            ScrollView {
+                VStack(spacing: 10) {
+                    ForEach(contactos_actuales){ contacto in
+                        NavigationLink{
+                            Text("Hola mundo")
+                        } label: {
+                            ContactoPrevista(contacto_a_mostar: contacto)
+                            
+                        }
+                        
+                    }
                 }
+                //.background(Color.cyan)//largo de pantalla se puede borrar
+                .frame(alignment: Alignment.center)
+                .padding(10)
+                //.background(Color.cyan)
             }
-            //.background(Color.cyan)//largo de pantalla se puede borrar
-            .frame(width: largo_de_pantalla, alignment: Alignment.center)
+            .background(Color.yellow)//color del fondo de la app
         }
-        .background(Color.yellow)//color del fondo de la app
+        
         
         HStack(alignment: VerticalAlignment.center, spacing: 25){
             ZStack{
                 Circle()
+                    .shadow(color:.blue, radius: 2.5)
+                    .opacity(0.9)
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                     .tint(Color.red)
-                    .foregroundColor(.green)
-                Rectangle()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(.cyan)
+                    .foregroundColor(.white)
+                Circle()
+                    .frame(width: 90)
+                    .foregroundColor(.gray)
+                    .opacity(0.12)
+                    .blur(radius: 2.0)
                 Image(systemName: "plus")
-                    .background(Color.red)
-                    .offset(x:0 , y:-25)
+                
+                    //.background(Color.red)
+                    .foregroundColor(Color.init(red:200, green:0, blue:45))
+                    .offset(x:0 , y:0) //para la posicion
+                    .font(.system(size: 50)) //para el tamaño
+                    .shadow(color: .pink, radius: 3)
             }
             .padding(15)
             
@@ -76,15 +94,25 @@ struct PantallaAgenda: View {
             
             ZStack{
                 Circle()
+                    .shadow(color:.blue, radius: 2.5)
+                    .opacity(0.9)
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                     .tint(Color.red)
-                    .foregroundColor(.green)
-                Rectangle()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(.cyan)
+                    .foregroundColor(.white)
+                Circle()
+                    .frame(width: 90)
+                    .foregroundColor(.gray)
+                    .opacity(0.12)
+                    .blur(radius: 2.0)
                 Image(systemName: "plus")
+                
                     //.background(Color.red)
-                    .offset(x:0 , y:-25)
+                    .foregroundColor(Color.init(red:200, green:0, blue:45))
+                    .offset(x:0 , y:0) //para la posicion
+                    .font(.system(size: 50)) //para el tamaño
+                    .shadow(color: .pink, radius: 3)
+                    
+                
             }
             
             .padding(15)
